@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            var StudentID=parseInt(prompt("Enter The Student ID"))
+            var Studentname=prompt("Enter The Student NAME")
+            var Tamil=parseInt(prompt("Enter The Tamil Marks"))
+            var English=parseInt(prompt("Enter The English Marks"))
+            var Mathematics=parseInt(prompt("Enter The Mathematics Marks"))
+            var Science=parseInt(prompt("Enter The Science Marks"))
+            var ComputerScience=parseInt(prompt("Enter The Computer Science Marks"))
+            var Total=Tamil+English+Mathematics+Science+ComputerScience;
+            var Percentage=Total*100/500;
+            document.write ("STUDENT ID="+StudentID+"<br>")
+            document.write("STUDENT NAME="+Studentname+"<br>")
+            document.write("TOTAL="+Total+"<br>")
+            document.write("PERCENTAGE="+Percentage+"<br>")    
+            
+        }
+        if (Percentage>90)
+        {
+            document.write("STUDENT GRADE=A");
+        }
+        else if(Percentage>80 && Percentage<=90)
+        {
+            document.write("STUDENT GRADE=B");
+        }
+        else if(Percentage>70 && Percentage<=80)
+        {
+            document.write("STUDENT GRADE=C");
+        }
+        else if(Percentage>60 && Percentage<=70)
+        {
+            document.write("STUDENT GRADE=D");
+        }
+        else if(Percentage>50 && Percentage<=60)
+        {
+            document.write("STUDENT GRADE=E");
+        }
+        else 
+        {
+            Document.write("STUDENT GRADE=FAIL")
+        }
+    </script>
+</body>
+</html>
